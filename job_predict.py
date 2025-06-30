@@ -9,7 +9,7 @@ st.title("Job Role Prediction")
 
 @st.cache_resource
 def load_and_train():
-    data = pd.read_csv("C:/Users/nitin/OneDrive/Documents/Job Prediction/Merged_data2.csv")
+    data = pd.read_csv("Merged_data2.csv")
     df = pd.DataFrame(data)
     df['skill_count'] = df['combined_skills'].apply(len)
     scaler = StandardScaler()
